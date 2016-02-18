@@ -5,6 +5,19 @@
 // the 2nd parameter is an array of 'requires'
 angular.module('starter', ['ionic', 'ngCordova'])
 
+.config(function($stateProvider, $urlRouterProvider) {
+
+  $stateProvider
+  .state('map', {
+    url: '/',
+    templateUrl: 'templates/map.html',
+    controller: 'MapCtrl'
+  });
+
+  $urlRouterProvider.otherwise("/");
+
+})
+
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     if(window.cordova && window.cordova.plugins.Keyboard) {
