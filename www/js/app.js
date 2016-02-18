@@ -36,7 +36,7 @@ angular.module('starter', ['ionic', 'ngCordova'])
   }, function(error){
     console.log("Could not get location");
   });
-});
+})
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
