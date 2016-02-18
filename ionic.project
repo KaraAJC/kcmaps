@@ -1,0 +1,12 @@
+{
+  "name": "kcmaps",
+  "app_id": "ffa77432",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}
